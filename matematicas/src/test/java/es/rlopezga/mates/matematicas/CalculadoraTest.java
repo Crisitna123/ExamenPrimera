@@ -52,4 +52,13 @@ class CalculadoraTest {
 		Assertions.assertFalse(Calculadora.esPrimo(20));
 	}
 	
+	@Test
+	void testPrimoIncorrecto() {
+		Throwable excepcion= Assertions.assertThrows(IllegalArgumentException.class, () -> Calculadora.esPrimo(-1));
+		Assertions.assertEquals("Primo incorrecto", excepcion.getMessage());
+		Throwable excepcion2= Assertions.assertThrows(IllegalArgumentException.class, () -> Calculadora.esPrimo(0));
+		Assertions.assertEquals("Primo incorrecto", excepcion.getMessage());
+		Throwable excepcion3= Assertions.assertThrows(IllegalArgumentException.class, () -> Calculadora.esPrimo(1));
+		Assertions.assertEquals("Primo incorrecto", excepcion.getMessage());
+	}
 }
