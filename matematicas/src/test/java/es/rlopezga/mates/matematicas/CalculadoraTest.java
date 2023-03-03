@@ -39,6 +39,13 @@ class CalculadoraTest {
 		Assertions.assertEquals("La solución no es un número real", excepcion.getMessage());
 	}
 	
+	
+	@Test
+	void testSolucion2Incorrecta() {
+		Throwable excepcion= Assertions.assertThrows(ArithmeticException.class, () -> Calculadora.solucion2(1,1,1));
+		Assertions.assertEquals("La solución no es un número real", excepcion.getMessage());
+	}
+	
 	@Test
 	void testPrimo() {
 		Assertions.assertTrue(Calculadora.esPrimo(2));
