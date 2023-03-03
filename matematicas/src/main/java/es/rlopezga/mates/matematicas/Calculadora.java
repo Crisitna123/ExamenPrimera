@@ -29,10 +29,10 @@ public class Calculadora {
 	 * @param c el tercer coeficiente de una ecuación de segundo grado. Por ejemplo en 3x^2 - 5x + 4 = 0 sería 4.
 	 * @throws ArithmeticException si la solución no es un número real.
 	 */
-	public double solucion2(int a, int b, int c) throws ArithmeticException {
+	public static double solucion2(int a, int b, int c) throws ArithmeticException {
 		double d = b * b - 4.0 * a * c;  
 		if (d> 0.0) {  
-		   return (-b + Math.pow(d, 0.5)) / (2.0 * a);  
+		   return -(b + Math.pow(d, 0.5)) / (2.0 * a);  
 		} else {
 			throw new ArithmeticException("La solución no es un número real");
 		}
