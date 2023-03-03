@@ -33,4 +33,16 @@ class CalculadoraTest {
 		Assertions.assertEquals(-2,Calculadora.solucion2(-1, -7, -10));
 	}
 
+	@Test
+	void testSolucion1Incorrecta() {
+		//Assertions.assertThrows(IllegalException.class, Calculadora.solucion1(1, 1, 1));
+	}
+	
+	@Test
+	void testPrimo() {
+		Assertions.assertTrue(Calculadora.esPrimo(2));
+		Assertions.assertTrue(Calculadora.esPrimo(7));
+		Assertions.assertTrue(Calculadora.esPrimo(19));
+	}
+	
 }

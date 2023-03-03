@@ -44,7 +44,7 @@ public class Calculadora {
 	 * @return true si el número es primo y false en caso contrario.
 	 * @throws IllegalArgumentException si el número introducido es menor o igual que 1.
 	 */
-	public boolean esPrimo(int n) throws IllegalArgumentException {
+	public static boolean esPrimo(int n) throws IllegalArgumentException {
 		if (n <= 1) {
 			// el número es menor que 1, por lo tanto no es primo.
 			return false;
