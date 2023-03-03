@@ -23,6 +23,7 @@ class CalculadoraTest {
 	void testSolucion1Correcta() {
 		Assertions.assertEquals(3,Calculadora.solucion1(1, -5, 6));
 		Assertions.assertEquals(3,Calculadora.solucion1(2, -7, 3));
+		Assertions.assertEquals(-5,Calculadora.solucion1(-1, -7, -10));
 	}
 
 }
